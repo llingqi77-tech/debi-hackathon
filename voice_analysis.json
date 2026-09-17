@@ -1,0 +1,568 @@
+{
+  "per_shot": {
+    "1": {
+      "duration": 5.18,
+      "voice_ratio": 0.587,
+      "voice_start": 0.96,
+      "voice_end": 5.13,
+      "mean_energy_db": -36.1,
+      "n_voiced_frames": 157,
+      "f0_mean": 311.1,
+      "f0_median": 124.6,
+      "f0_std": 609.8,
+      "f0_min": 3.6,
+      "f0_max": 6254.3,
+      "f0_p25": 105.4,
+      "f0_p75": 298.8,
+      "dialogue": "无",
+      "speakers": []
+    },
+    "2": {
+      "duration": 5.18,
+      "voice_ratio": 0.992,
+      "voice_start": 0.04,
+      "voice_end": 5.15,
+      "mean_energy_db": -20.9,
+      "n_voiced_frames": 464,
+      "f0_mean": 355.9,
+      "f0_median": 325.7,
+      "f0_std": 761.8,
+      "f0_min": 25.9,
+      "f0_max": 16288.4,
+      "f0_p25": 175.0,
+      "f0_p75": 405.3,
+      "dialogue": "渊画外音",
+      "speakers": [
+        "yuan_20"
+      ]
+    },
+    "3": {
+      "duration": 5.18,
+      "voice_ratio": 0.967,
+      "voice_start": 0.17,
+      "voice_end": 5.15,
+      "mean_energy_db": -27.9,
+      "n_voiced_frames": 423,
+      "f0_mean": 255.7,
+      "f0_median": 234.4,
+      "f0_std": 113.3,
+      "f0_min": 92.1,
+      "f0_max": 650.9,
+      "f0_p25": 157.6,
+      "f0_p75": 327.6,
+      "dialogue": "精灵+渊",
+      "speakers": [
+        "fairy",
+        "yuan_20"
+      ]
+    },
+    "4": {
+      "duration": 5.18,
+      "voice_ratio": 0.578,
+      "voice_start": 0.55,
+      "voice_end": 4.69,
+      "mean_energy_db": -46.4,
+      "n_voiced_frames": 189,
+      "f0_mean": 383.7,
+      "f0_median": 403.4,
+      "f0_std": 104.5,
+      "f0_min": 111.2,
+      "f0_max": 599.0,
+      "f0_p25": 317.6,
+      "f0_p75": 470.8,
+      "dialogue": "精灵",
+      "speakers": [
+        "fairy"
+      ]
+    },
+    "5": {
+      "duration": 5.18,
+      "voice_ratio": 0.76,
+      "voice_start": 0.81,
+      "voice_end": 4.85,
+      "mean_energy_db": -36.2,
+      "n_voiced_frames": 331,
+      "f0_mean": 406.9,
+      "f0_median": 405.1,
+      "f0_std": 277.5,
+      "f0_min": 75.2,
+      "f0_max": 4948.5,
+      "f0_p25": 264.8,
+      "f0_p75": 504.0,
+      "dialogue": "无",
+      "speakers": []
+    },
+    "6": {
+      "duration": 5.18,
+      "voice_ratio": 0.828,
+      "voice_start": 0.66,
+      "voice_end": 5.15,
+      "mean_energy_db": -32.2,
+      "n_voiced_frames": 380,
+      "f0_mean": 359.4,
+      "f0_median": 331.1,
+      "f0_std": 206.0,
+      "f0_min": 88.5,
+      "f0_max": 2440.6,
+      "f0_p25": 219.9,
+      "f0_p75": 485.3,
+      "dialogue": "渊画外音",
+      "speakers": [
+        "yuan_20"
+      ]
+    },
+    "7": {
+      "duration": 5.18,
+      "voice_ratio": 0.599,
+      "voice_start": 0.43,
+      "voice_end": 4.94,
+      "mean_energy_db": -40.4,
+      "n_voiced_frames": 210,
+      "f0_mean": 345.6,
+      "f0_median": 301.8,
+      "f0_std": 242.6,
+      "f0_min": 33.0,
+      "f0_max": 2884.0,
+      "f0_p25": 251.5,
+      "f0_p75": 382.4,
+      "dialogue": "精灵+渊",
+      "speakers": [
+        "fairy",
+        "yuan_20"
+      ]
+    },
+    "8": {
+      "duration": 5.18,
+      "voice_ratio": 0.967,
+      "voice_start": 0.17,
+      "voice_end": 5.15,
+      "mean_energy_db": -22.7,
+      "n_voiced_frames": 458,
+      "f0_mean": 330.8,
+      "f0_median": 226.1,
+      "f0_std": 715.1,
+      "f0_min": 10.2,
+      "f0_max": 14160.1,
+      "f0_p25": 197.4,
+      "f0_p75": 315.5,
+      "dialogue": "精灵+渊",
+      "speakers": [
+        "fairy",
+        "yuan_20"
+      ]
+    },
+    "9": {
+      "duration": 5.18,
+      "voice_ratio": 0.938,
+      "voice_start": 0.32,
+      "voice_end": 5.15,
+      "mean_energy_db": -30.0,
+      "n_voiced_frames": 373,
+      "f0_mean": 344.2,
+      "f0_median": 358.6,
+      "f0_std": 145.2,
+      "f0_min": 122.2,
+      "f0_max": 782.7,
+      "f0_p25": 191.1,
+      "f0_p75": 482.3,
+      "dialogue": "无",
+      "speakers": []
+    },
+    "10": {
+      "duration": 5.18,
+      "voice_ratio": 0.994,
+      "voice_start": 0.0,
+      "voice_end": 5.13,
+      "mean_energy_db": -19.4,
+      "n_voiced_frames": 451,
+      "f0_mean": 284.8,
+      "f0_median": 220.0,
+      "f0_std": 267.3,
+      "f0_min": 23.6,
+      "f0_max": 3528.3,
+      "f0_p25": 170.8,
+      "f0_p75": 307.2,
+      "dialogue": "渊画外音",
+      "speakers": [
+        "yuan_30"
+      ]
+    },
+    "11": {
+      "duration": 5.18,
+      "voice_ratio": 0.994,
+      "voice_start": 0.02,
+      "voice_end": 5.15,
+      "mean_energy_db": -21.0,
+      "n_voiced_frames": 462,
+      "f0_mean": 320.3,
+      "f0_median": 323.8,
+      "f0_std": 153.0,
+      "f0_min": 74.7,
+      "f0_max": 1349.5,
+      "f0_p25": 156.2,
+      "f0_p75": 442.5,
+      "dialogue": "渊",
+      "speakers": [
+        "yuan_30"
+      ]
+    },
+    "12": {
+      "duration": 5.18,
+      "voice_ratio": 0.797,
+      "voice_start": 1.04,
+      "voice_end": 5.15,
+      "mean_energy_db": -28.3,
+      "n_voiced_frames": 348,
+      "f0_mean": 260.6,
+      "f0_median": 221.1,
+      "f0_std": 111.6,
+      "f0_min": 79.6,
+      "f0_max": 617.0,
+      "f0_p25": 195.9,
+      "f0_p75": 278.1,
+      "dialogue": "精灵+渊",
+      "speakers": [
+        "fairy",
+        "yuan_30"
+      ]
+    },
+    "13": {
+      "duration": 5.18,
+      "voice_ratio": 1.0,
+      "voice_start": 0.0,
+      "voice_end": 5.15,
+      "mean_energy_db": -27.4,
+      "n_voiced_frames": 477,
+      "f0_mean": 252.9,
+      "f0_median": 220.3,
+      "f0_std": 99.7,
+      "f0_min": 82.3,
+      "f0_max": 528.7,
+      "f0_p25": 186.0,
+      "f0_p75": 304.8,
+      "dialogue": "无",
+      "speakers": []
+    },
+    "14": {
+      "duration": 5.18,
+      "voice_ratio": 1.0,
+      "voice_start": 0.0,
+      "voice_end": 5.15,
+      "mean_energy_db": -22.5,
+      "n_voiced_frames": 500,
+      "f0_mean": 229.5,
+      "f0_median": 196.6,
+      "f0_std": 89.9,
+      "f0_min": 98.2,
+      "f0_max": 517.2,
+      "f0_p25": 156.9,
+      "f0_p75": 298.8,
+      "dialogue": "渊画外音",
+      "speakers": [
+        "yuan_30"
+      ]
+    },
+    "15": {
+      "duration": 5.18,
+      "voice_ratio": 1.0,
+      "voice_start": 0.0,
+      "voice_end": 5.15,
+      "mean_energy_db": -22.5,
+      "n_voiced_frames": 476,
+      "f0_mean": 269.5,
+      "f0_median": 271.3,
+      "f0_std": 78.1,
+      "f0_min": 98.0,
+      "f0_max": 557.8,
+      "f0_p25": 239.0,
+      "f0_p75": 320.9,
+      "dialogue": "精灵",
+      "speakers": [
+        "fairy"
+      ]
+    },
+    "16": {
+      "duration": 5.18,
+      "voice_ratio": 1.0,
+      "voice_start": 0.0,
+      "voice_end": 5.15,
+      "mean_energy_db": -19.5,
+      "n_voiced_frames": 478,
+      "f0_mean": 208.9,
+      "f0_median": 180.8,
+      "f0_std": 88.3,
+      "f0_min": 98.2,
+      "f0_max": 1065.4,
+      "f0_p25": 166.8,
+      "f0_p75": 205.2,
+      "dialogue": "渊",
+      "speakers": [
+        "yuan_40"
+      ]
+    },
+    "17": {
+      "duration": 5.18,
+      "voice_ratio": 1.0,
+      "voice_start": 0.0,
+      "voice_end": 5.15,
+      "mean_energy_db": -20.7,
+      "n_voiced_frames": 480,
+      "f0_mean": 271.6,
+      "f0_median": 231.4,
+      "f0_std": 123.5,
+      "f0_min": 99.2,
+      "f0_max": 530.4,
+      "f0_p25": 170.1,
+      "f0_p75": 350.8,
+      "dialogue": "渊",
+      "speakers": [
+        "yuan_40"
+      ]
+    },
+    "18": {
+      "duration": 5.18,
+      "voice_ratio": 0.975,
+      "voice_start": 0.06,
+      "voice_end": 5.15,
+      "mean_energy_db": -23.1,
+      "n_voiced_frames": 489,
+      "f0_mean": 286.5,
+      "f0_median": 293.0,
+      "f0_std": 83.3,
+      "f0_min": 113.4,
+      "f0_max": 515.1,
+      "f0_p25": 217.8,
+      "f0_p75": 335.3,
+      "dialogue": "精灵",
+      "speakers": [
+        "fairy"
+      ]
+    },
+    "19": {
+      "duration": 5.18,
+      "voice_ratio": 1.0,
+      "voice_start": 0.0,
+      "voice_end": 5.15,
+      "mean_energy_db": -33.9,
+      "n_voiced_frames": 509,
+      "f0_mean": 306.8,
+      "f0_median": 315.6,
+      "f0_std": 122.1,
+      "f0_min": 102.7,
+      "f0_max": 561.9,
+      "f0_p25": 183.9,
+      "f0_p75": 396.8,
+      "dialogue": "无",
+      "speakers": []
+    },
+    "20": {
+      "duration": 5.18,
+      "voice_ratio": 0.893,
+      "voice_start": 0.01,
+      "voice_end": 5.15,
+      "mean_energy_db": -24.4,
+      "n_voiced_frames": 427,
+      "f0_mean": 286.0,
+      "f0_median": 238.4,
+      "f0_std": 117.7,
+      "f0_min": 120.3,
+      "f0_max": 951.7,
+      "f0_p25": 196.6,
+      "f0_p75": 363.2,
+      "dialogue": "精灵+渊",
+      "speakers": [
+        "fairy",
+        "yuan_40"
+      ]
+    },
+    "21": {
+      "duration": 5.18,
+      "voice_ratio": 0.998,
+      "voice_start": 0.01,
+      "voice_end": 5.15,
+      "mean_energy_db": -20.1,
+      "n_voiced_frames": 501,
+      "f0_mean": 284.6,
+      "f0_median": 247.2,
+      "f0_std": 120.3,
+      "f0_min": 88.8,
+      "f0_max": 583.5,
+      "f0_p25": 176.8,
+      "f0_p75": 373.4,
+      "dialogue": "精灵",
+      "speakers": [
+        "fairy"
+      ]
+    },
+    "22": {
+      "duration": 5.18,
+      "voice_ratio": 0.981,
+      "voice_start": 0.1,
+      "voice_end": 5.15,
+      "mean_energy_db": -22.4,
+      "n_voiced_frames": 435,
+      "f0_mean": 321.2,
+      "f0_median": 299.5,
+      "f0_std": 149.3,
+      "f0_min": 97.6,
+      "f0_max": 2029.5,
+      "f0_p25": 206.7,
+      "f0_p75": 417.6,
+      "dialogue": "渊画外音",
+      "speakers": [
+        "yuan_40"
+      ]
+    },
+    "23": {
+      "duration": 5.18,
+      "voice_ratio": 0.647,
+      "voice_start": 0.07,
+      "voice_end": 4.09,
+      "mean_energy_db": -31.8,
+      "n_voiced_frames": 314,
+      "f0_mean": 230.7,
+      "f0_median": 207.3,
+      "f0_std": 86.2,
+      "f0_min": 129.9,
+      "f0_max": 664.6,
+      "f0_p25": 175.4,
+      "f0_p75": 261.2,
+      "dialogue": "精灵+渊",
+      "speakers": [
+        "fairy",
+        "yuan_40"
+      ]
+    },
+    "24": {
+      "duration": 5.18,
+      "voice_ratio": 0.884,
+      "voice_start": 0.23,
+      "voice_end": 4.84,
+      "mean_energy_db": -28.7,
+      "n_voiced_frames": 325,
+      "f0_mean": 244.2,
+      "f0_median": 173.7,
+      "f0_std": 174.4,
+      "f0_min": 5.4,
+      "f0_max": 2077.6,
+      "f0_p25": 131.8,
+      "f0_p75": 335.9,
+      "dialogue": "渊画外音",
+      "speakers": [
+        "yuan_40"
+      ]
+    }
+  },
+  "group_stats": {
+    "精灵(全部出场)": {
+      "shots": [
+        3,
+        4,
+        7,
+        8,
+        12,
+        15,
+        18,
+        20,
+        21,
+        23
+      ],
+      "n": 10,
+      "mean_of_means": 293.4,
+      "std_of_means": 44.1,
+      "min": 230.7,
+      "max": 383.7
+    },
+    "渊-20岁": {
+      "shots": [
+        2,
+        3,
+        6,
+        7,
+        8
+      ],
+      "n": 5,
+      "mean_of_means": 329.5,
+      "std_of_means": 38.2,
+      "min": 255.7,
+      "max": 359.4
+    },
+    "渊-30岁": {
+      "shots": [
+        10,
+        11,
+        12,
+        14
+      ],
+      "n": 4,
+      "mean_of_means": 273.8,
+      "std_of_means": 33.2,
+      "min": 229.5,
+      "max": 320.3
+    },
+    "渊-40岁": {
+      "shots": [
+        16,
+        17,
+        20,
+        22,
+        23,
+        24
+      ],
+      "n": 6,
+      "mean_of_means": 260.4,
+      "std_of_means": 37.1,
+      "min": 208.9,
+      "max": 321.2
+    },
+    "渊-20岁(单人)": {
+      "shots": [
+        2,
+        6
+      ],
+      "n": 2,
+      "mean_of_means": 357.6,
+      "std_of_means": 1.8,
+      "min": 355.9,
+      "max": 359.4
+    },
+    "渊-30岁(单人)": {
+      "shots": [
+        10,
+        11,
+        14
+      ],
+      "n": 3,
+      "mean_of_means": 278.2,
+      "std_of_means": 37.4,
+      "min": 229.5,
+      "max": 320.3
+    },
+    "渊-40岁(单人)": {
+      "shots": [
+        16,
+        17,
+        22,
+        24
+      ],
+      "n": 4,
+      "mean_of_means": 261.5,
+      "std_of_means": 41.0,
+      "min": 208.9,
+      "max": 321.2
+    },
+    "精灵(单人)": {
+      "shots": [
+        4,
+        15,
+        18,
+        21
+      ],
+      "n": 4,
+      "mean_of_means": 306.1,
+      "std_of_means": 45.3,
+      "min": 269.5,
+      "max": 383.7
+    }
+  }
+}

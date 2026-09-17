@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>《她的花向上开》24镜声音一致性分析报告</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+<style>
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; max-width: 1100px; margin: 0 auto; padding: 24px; background: #fafafa; color: #222; }
+  h1 { font-size: 22px; border-bottom: 2px solid #333; padding-bottom: 10px; }
+  h2 { font-size: 17px; margin-top: 32px; color: #1a1a1a; }
+  .summary-box { background: #fff; border-radius: 8px; padding: 16px 20px; margin: 16px 0; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+  .summary-box h3 { margin: 0 0 8px 0; font-size: 15px; }
+  .finding { padding: 8px 0; border-bottom: 1px solid #eee; }
+  .finding:last-child { border-bottom: none; }
+  .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 600; margin-right: 6px; }
+  .tag-pass { background: #e6f7e6; color: #1a7f1a; }
+  .tag-warn { background: #fff4e0; color: #b36b00; }
+  .tag-fail { background: #ffe6e6; color: #b30000; }
+  .chart-container { background: #fff; border-radius: 8px; padding: 16px; margin: 16px 0; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+  .chart { width: 100%; height: 420px; }
+  .chart-tall { height: 500px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 12px 0; }
+  th, td { padding: 8px 10px; text-align: center; border-bottom: 1px solid #eee; }
+  th { background: #f5f5f5; font-weight: 600; }
+  .note { font-size: 12px; color: #888; margin-top: 8px; line-height: 1.6; }
+  .highlight { background: #fff8e1; padding: 2px 4px; border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<h1>《她的花向上开》24镜声音一致性分析报告</h1>
+<p style="color:#666;font-size:13px;">分析方法：从24个视频提取音轨 → 能量阈值检测语音帧 → 自相关法估计基频(F0) → 按角色和年龄段分组比对。数据来源：本地视频文件实际音轨。</p>
+
+<div class="summary-box">
+  <h3>核心结论</h3>
+  <div class="finding">
+    <span class="tag tag-fail">不一致</span>
+    <strong>精灵声音存在明显异常：</strong>镜头04的精灵基频中位数高达 <span class="highlight">403 Hz</span>，而其他所有精灵镜头（15/18/21等单人镜头）中位数在 <strong>247-293 Hz</strong>，相差约 110-150 Hz。镜头04的精灵音高接近幼儿音域，与配音建议"不使用幼儿音或夸张卡通音"冲突。
+  </div>
+  <div class="finding">
+    <span class="tag tag-warn">部分符合</span>
+    <strong>女主角年龄区分有体现但不稳定：</strong>20岁画外音 F0 中位数 ~328 Hz（清亮），30岁画外音 ~208 Hz（明显降低、更沉稳），符合"20岁清亮→30岁更有力量"的方向。但40岁画外音不一致：镜头22 ~300 Hz（偏高），镜头24 ~174 Hz（偏低），未稳定体现"温和、笃定"。
+  </div>
+  <div class="finding">
+    <span class="tag tag-pass">符合</span>
+    <strong>20岁女主角单人镜头声音高度一致：</strong>镜头02和镜头06的画外音 F0 均值分别为 355.9 和 359.4 Hz，标准差仅 1.8 Hz，说明同一配音/同一参数，一致性很好。
+  </div>
+  <div class="finding">
+    <span class="tag tag-warn">需注意</span>
+    <strong>"无台词"镜头仍检测到语音频段能量：</strong>标记为无台词的镜头（01/05/09/13/19）语音占比 0.59-1.0，这是配乐和环境声被能量阈值误检为语音，不是真正的人声对白。
+  </div>
+</div>
+
+<h2>一、各镜头基频(F0)中位数全景</h2>
+<div class="chart-container">
+  <div id="chart1" class="chart chart-tall"></div>
+  <p class="note">F0中位数比均值更能代表真实说话音高（均值易受音乐/噪声的八度误检干扰）。正常成年女性说话音高约 165-255 Hz，偏高音色 250-320 Hz，幼儿/卡通音 &gt;350 Hz。</p>
+</div>
+
+<h2>二、精灵声音一致性分析（单人镜头）</h2>
+<div class="chart-container">
+  <div id="chart2" class="chart"></div>
+  <p class="note">精灵单人出场镜头：04（第一幕）、15（第四幕）、18（第五幕）、21（第六幕）。镜头04明显偏离其他三镜，建议重新配音或调整参数。</p>
+</div>
+
+<h2>三、女主角各年龄段基频对比</h2>
+<div class="chart-container">
+  <div id="chart3" class="chart"></div>
+  <p class="note">仅统计画外音单人镜头（排除与精灵对话的混合镜头）：20岁=镜头02/06，30岁=镜头10/14，40岁=镜头22/24。20→30岁音高明显下降，30→40岁趋势不明确且波动大。</p>
+</div>
+
+<h2>四、配音建议符合度对照表</h2>
+<table>
+  <tr>
+    <th>配音建议</th>
+    <th>实际检测</th>
+    <th>符合度</th>
+  </tr>
+  <tr>
+    <td>渊20岁：音色清亮但不过分稚嫩</td>
+    <td>F0中位数 ~328 Hz，偏高但在清亮女声范围内，未到幼儿音域</td>
+    <td><span class="tag tag-pass">符合</span></td>
+  </tr>
+  <tr>
+    <td>渊30岁：更稳定有力量</td>
+    <td>F0中位数 ~208 Hz，比20岁低约120 Hz，音域更沉稳</td>
+    <td><span class="tag tag-pass">基本符合</span></td>
+  </tr>
+  <tr>
+    <td>渊40岁：温和、笃定，不刻意压低或老化</td>
+    <td>镜头22 ~300 Hz（偏高），镜头24 ~174 Hz（偏低），两镜差异达126 Hz，不稳定</td>
+    <td><span class="tag tag-warn">不稳定</span></td>
+  </tr>
+  <tr>
+    <td>精灵：轻盈、清楚、略带好奇</td>
+    <td>镜头15/18/21 F0中位数 247-293 Hz，在偏高女声范围内，符合轻盈感</td>
+    <td><span class="tag tag-pass">多数符合</span></td>
+  </tr>
+  <tr>
+    <td>精灵：不使用幼儿音或夸张卡通音</td>
+    <td>镜头04 F0中位数 403 Hz，进入幼儿/卡通音域，明显违反此条</td>
+    <td><span class="tag tag-fail">镜头04违反</span></td>
+  </tr>
+  <tr>
+    <td>除03/07/08/12/15/18/20/23外，台词均为画外音</td>
+    <td>需结合画面口型进一步确认；音频层面无法区分画外音与同期声</td>
+    <td><span class="tag tag-warn">待确认</span></td>
+  </tr>
+</table>
+
+<h2>五、建议</h2>
+<div class="summary-box">
+  <div class="finding">
+    <strong>1. 优先重做镜头04的精灵配音：</strong>该镜头精灵音高(403Hz)与全片其他精灵镜头(247-293Hz)严重不一致，且违反"不使用幼儿音"的配音建议。建议用与镜头15/18/21相同的配音参数重新生成。
+  </div>
+  <div class="finding">
+    <strong>2. 统一40岁女主角的配音风格：</strong>镜头22和镜头24的画外音差异过大(300Hz vs 174Hz)。建议以镜头16(181Hz)或镜头17(231Hz)的40岁同期声为基准，统一画外音参数，体现"温和、笃定"而非大幅波动。
+  </div>
+  <div class="finding">
+    <strong>3. 混合对话镜头(03/07/08/12/20/23)建议进一步分离人声：</strong>当前分析因两人声音混合无法精确归因。如需精确比对，可使用人声分离工具将精灵和女主角的声音拆开后再做声纹比对。
+  </div>
+  <div class="finding">
+    <strong>4. 本报告基于基频(F0)分析：</strong>音高只是声音一致性的一个维度。音色(timbre)、共振峰(formant)、语速、气息等特征需要通过听辨或更专业的声纹分析工具进一步确认。建议关键镜头人工听辨复核。
+  </div>
+</div>
+
+<script>
+// 数据
+var shotData = [
+  {num:1,  label:'01', dialogue:'无',       f0median:124.6, group:'无台词'},
+  {num:2,  label:'02', dialogue:'渊画外音',  f0median:325.7, group:'渊-20岁'},
+  {num:3,  label:'03', dialogue:'精灵+渊',   f0median:234.4, group:'混合'},
+  {num:4,  label:'04', dialogue:'精灵',      f0median:403.4, group:'精灵'},
+  {num:5,  label:'05', dialogue:'无',       f0median:405.1, group:'无台词'},
+  {num:6,  label:'06', dialogue:'渊画外音',  f0median:331.1, group:'渊-20岁'},
+  {num:7,  label:'07', dialogue:'精灵+渊',   f0median:301.8, group:'混合'},
+  {num:8,  label:'08', dialogue:'精灵+渊',   f0median:226.1, group:'混合'},
+  {num:9,  label:'09', dialogue:'无',       f0median:358.6, group:'无台词'},
+  {num:10, label:'10', dialogue:'渊画外音',  f0median:220.0, group:'渊-30岁'},
+  {num:11, label:'11', dialogue:'渊',        f0median:323.8, group:'渊-30岁'},
+  {num:12, label:'12', dialogue:'精灵+渊',   f0median:221.1, group:'混合'},
+  {num:13, label:'13', dialogue:'无',       f0median:220.3, group:'无台词'},
+  {num:14, label:'14', dialogue:'渊画外音',  f0median:196.6, group:'渊-30岁'},
+  {num:15, label:'15', dialogue:'精灵',      f0median:271.3, group:'精灵'},
+  {num:16, label:'16', dialogue:'渊',        f0median:180.8, group:'渊-40岁'},
+  {num:17, label:'17', dialogue:'渊',        f0median:231.4, group:'渊-40岁'},
+  {num:18, label:'18', dialogue:'精灵',      f0median:293.0, group:'精灵'},
+  {num:19, label:'19', dialogue:'无',       f0median:315.6, group:'无台词'},
+  {num:20, label:'20', dialogue:'精灵+渊',   f0median:238.4, group:'混合'},
+  {num:21, label:'21', dialogue:'精灵',      f0median:247.2, group:'精灵'},
+  {num:22, label:'22', dialogue:'渊画外音',  f0median:299.5, group:'渊-40岁'},
+  {num:23, label:'23', dialogue:'精灵+渊',   f0median:207.3, group:'混合'},
+  {num:24, label:'24', dialogue:'渊画外音',  f0median:173.7, group:'渊-40岁'}
+];
+
+var groupColors = {
+  '渊-20岁': '#5470c6',
+  '渊-30岁': '#91cc75',
+  '渊-40岁': '#fac858',
+  '精灵': '#ee6666',
+  '混合': '#9a60b4',
+  '无台词': '#ccc'
+};
+
+// 图1：各镜头F0中位数
+var chart1 = echarts.init(document.getElementById('chart1'));
+chart1.setOption({
+  title: { text: '24镜基频(F0)中位数分布', left: 'center', textStyle: {fontSize: 15} },
+  tooltip: {
+    trigger: 'axis', triggerOn: 'click', renderMode: 'richText', confine: true,
+    formatter: function(params) {
+      var d = shotData[params[0].dataIndex];
+      return '镜头' + d.label + '<br/>台词: ' + d.dialogue + '<br/>F0中位数: ' + d.f0median + ' Hz<br/>分组: ' + d.group;
+    }
+  },
+  grid: { left: 60, right: 30, top: 60, bottom: 60, containLabel: true },
+  xAxis: { type: 'category', data: shotData.map(function(d){return d.label;}), name: '镜头', axisLabel: {fontSize: 11} },
+  yAxis: { type: 'value', name: 'F0中位数 (Hz)', min: 0, max: 450,
+    splitLine: {show: true},
+    markArea: {silent: true, itemStyle: {color: 'rgba(255,230,230,0.3)'},
+      data: [[{yAxis: 350}, {yAxis: 450}]]}
+  },
+  series: [{
+    type: 'bar',
+    data: shotData.map(function(d){
+      return {value: d.f0median, itemStyle: {color: groupColors[d.group]}};
+    }),
+    barWidth: '60%',
+    label: {show: true, position: 'top', fontSize: 10, formatter: function(p){return p.value;}},
+    markLine: {
+      silent: true, symbol: 'none',
+      data: [
+        {yAxis: 255, name: '成年女声上限', lineStyle: {type: 'dashed', color: '#999'}, label: {formatter: '成年女声上限~255Hz', fontSize: 10}},
+        {yAxis: 350, name: '幼儿音域起点', lineStyle: {type: 'dashed', color: '#ee6666'}, label: {formatter: '幼儿/卡通音>350Hz', fontSize: 10}}
+      ]
+    }
+  }],
+  legend: {
+    bottom: 5,
+    data: [
+      {name: '渊-20岁', icon: 'rect', itemStyle: {color: '#5470c6'}},
+      {name: '渊-30岁', icon: 'rect', itemStyle: {color: '#91cc75'}},
+      {name: '渊-40岁', icon: 'rect', itemStyle: {color: '#fac858'}},
+      {name: '精灵', icon: 'rect', itemStyle: {color: '#ee6666'}},
+      {name: '混合对话', icon: 'rect', itemStyle: {color: '#9a60b4'}},
+      {name: '无台词(配乐误检)', icon: 'rect', itemStyle: {color: '#ccc'}}
+    ],
+    textStyle: {fontSize: 11}
+  }
+});
+
+// 图2：精灵单人镜头对比
+var chart2 = echarts.init(document.getElementById('chart2'));
+chart2.setOption({
+  title: { text: '精灵单人镜头 F0 中位数对比', left: 'center', textStyle: {fontSize: 15} },
+  tooltip: { trigger: 'axis', triggerOn: 'click', renderMode: 'richText', confine: true },
+  grid: { left: 60, right: 30, top: 50, bottom: 50, containLabel: true },
+  xAxis: { type: 'category', data: ['镜头04\n(第一幕)', '镜头15\n(第四幕)', '镜头18\n(第五幕)', '镜头21\n(第六幕)'] },
+  yAxis: { type: 'value', name: 'F0中位数 (Hz)', min: 0, max: 450 },
+  series: [{
+    type: 'bar',
+    data: [
+      {value: 403.4, itemStyle: {color: '#ee6666'}},
+      {value: 271.3, itemStyle: {color: '#73c0de'}},
+      {value: 293.0, itemStyle: {color: '#73c0de'}},
+      {value: 247.2, itemStyle: {color: '#73c0de'}}
+    ],
+    barWidth: '45%',
+    label: {show: true, position: 'top', fontSize: 13, fontWeight: 'bold', formatter: '{c} Hz'},
+    markLine: {
+      silent: true, symbol: 'none',
+      data: [{yAxis: 350, lineStyle: {type: 'dashed', color: '#ee6666'}, label: {formatter: '幼儿音域起点 350Hz', fontSize: 11}}]
+    }
+  }]
+});
+
+// 图3：女主角各年龄段对比
+var chart3 = echarts.init(document.getElementById('chart3'));
+chart3.setOption({
+  title: { text: '女主角画外音 F0 中位数：各年龄段对比', left: 'center', textStyle: {fontSize: 15} },
+  tooltip: { trigger: 'axis', triggerOn: 'click', renderMode: 'richText', confine: true },
+  legend: { bottom: 5, textStyle: {fontSize: 11} },
+  grid: { left: 60, right: 30, top: 50, bottom: 60, containLabel: true },
+  xAxis: { type: 'category', data: ['20岁\n(镜头02/06)', '30岁\n(镜头10/14)', '40岁\n(镜头22/24)'] },
+  yAxis: { type: 'value', name: 'F0中位数 (Hz)', min: 0, max: 380 },
+  series: [
+    {
+      name: '各镜数值',
+      type: 'scatter',
+      symbolSize: 18,
+      data: [
+        [0, 325.7], [0, 331.1],
+        [1, 220.0], [1, 196.6],
+        [2, 299.5], [2, 173.7]
+      ],
+      itemStyle: {color: '#5470c6'}
+    },
+    {
+      name: '组均值',
+      type: 'bar',
+      barWidth: '35%',
+      data: [
+        {value: 328.4, itemStyle: {color: 'rgba(84,112,198,0.3)'}},
+        {value: 208.3, itemStyle: {color: 'rgba(145,204,117,0.3)'}},
+        {value: 236.6, itemStyle: {color: 'rgba(250,200,88,0.3)'}}
+      ],
+      label: {show: true, position: 'top', fontSize: 12, fontWeight: 'bold', formatter: '{c} Hz'},
+      z: 1
+    }
+  ]
+});
+
+window.addEventListener('resize', function(){
+  chart1.resize(); chart2.resize(); chart3.resize();
+});
+</script>
+</body>
+</html>

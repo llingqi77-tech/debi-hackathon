@@ -1,0 +1,114 @@
+{
+  "shot_01": {
+    "status": "succeeded",
+    "task_id": "442790276292803",
+    "video_url": "https://video-product.cdn.minimax.io/inference_output/rollout/2026-09-17/3df42ca1-9955-4025-be0b-d2e37c3dbdee/output_aigc.mp4",
+    "output_file": "/Users/linglingqi/Downloads/她的花向上开-24镜完整版/output/镜头01.mp4",
+    "completed_at": "2026-09-17 22:43:10"
+  },
+  "shot_02": {
+    "status": "succeeded",
+    "task_id": "442791352250441",
+    "video_url": "https://video-product.cdn.minimax.io/inference_output/rollout/2026-09-17/484196c8-f059-42ca-bc65-8a7a29983dd6/output_aigc.mp4",
+    "output_file": "/Users/linglingqi/Downloads/她的花向上开-24镜完整版/output/镜头02.mp4",
+    "completed_at": "2026-09-17 22:53:20"
+  },
+  "shot_03": {
+    "status": "succeeded",
+    "task_id": "442793676644563",
+    "video_url": "https://video-product.cdn.minimax.io/inference_output/rollout/2026-09-17/7eb68c0d-a667-4dad-9b0c-fce55db4850e/output_aigc.mp4",
+    "output_file": "/Users/linglingqi/Downloads/她的花向上开-24镜完整版/output/镜头03.mp4",
+    "completed_at": "2026-09-17 22:58:48"
+  },
+  "shot_04": {
+    "status": "succeeded",
+    "task_id": "442794708074606",
+    "video_url": "https://video-product.cdn.minimax.io/inference_output/rollout/2026-09-17/eff5bc64-d7ca-4da8-a257-38dd2e1aac85/output_aigc.mp4",
+    "output_file": "/Users/linglingqi/Downloads/她的花向上开-24镜完整版/output/镜头04.mp4",
+    "completed_at": "2026-09-17 23:04:44"
+  },
+  "shot_05": {
+    "status": "succeeded",
+    "task_id": "442795996389620",
+    "video_url": "https://video-product.cdn.minimax.io/inference_output/rollout/2026-09-17/a2974b6f-a99d-4dd6-acfa-96933ecd76bb/output_aigc.mp4",
+    "output_file": "/Users/linglingqi/Downloads/她的花向上开-24镜完整版/output/镜头05.mp4",
+    "completed_at": "2026-09-17 23:15:23"
+  },
+  "shot_06": {
+    "status": "succeeded",
+    "task_id": "442799368872136",
+    "video_url": "https://video-product.cdn.minimax.io/inference_output/rollout/2026-09-17/50c9e42a-0edf-41e6-9d7c-868fb859c588/output_aigc.mp4",
+    "output_file": "/Users/linglingqi/Downloads/她的花向上开-24镜完整版/output/镜头06.mp4",
+    "completed_at": "2026-09-17 23:20:59"
+  },
+  "shot_07": {
+    "status": "succeeded",
+    "task_id": "442800745492742",
+    "video_url": "https://video-product.cdn.minimax.io/inference_output/rollout/2026-09-17/7ccb084d-94d1-40ed-adeb-f52a7970beb8/output_aigc.mp4",
+    "output_file": "/Users/linglingqi/Downloads/她的花向上开-24镜完整版/output/镜头07.mp4",
+    "completed_at": "2026-09-17 23:25:49"
+  },
+  "shot_08": {
+    "status": "succeeded",
+    "task_id": "442801470795873",
+    "video_url": "https://video-product.cdn.minimax.io/inference_output/rollout/2026-09-17/d7eab92e-be20-4517-aa08-461dc14cce75/output_aigc.mp4",
+    "output_file": "/Users/linglingqi/Downloads/她的花向上开-24镜完整版/output/镜头08.mp4",
+    "completed_at": "2026-09-17 23:33:34"
+  },
+  "shot_09": {
+    "status": "succeeded",
+    "task_id": "442803827753033",
+    "video_url": "https://video-product.cdn.minimax.io/inference_output/rollout/2026-09-17/9bc28df2-e236-439e-8224-ddb59f141b4e/output_aigc.mp4",
+    "output_file": "/Users/linglingqi/Downloads/她的花向上开-24镜完整版/output/镜头09.mp4",
+    "completed_at": "2026-09-17 23:38:53"
+  },
+  "shot_10": {
+    "status": "succeeded",
+    "task_id": "442804499955956",
+    "video_url": "https://video-product.cdn.minimax.io/inference_output/rollout/2026-09-17/1ce42ea7-368a-46dc-b0f7-de97982d9cb8/output_aigc.mp4",
+    "output_file": "/Users/linglingqi/Downloads/她的花向上开-24镜完整版/output/镜头10.mp4",
+    "completed_at": "2026-09-17 23:45:04"
+  },
+  "shot_11": {
+    "status": "succeeded",
+    "task_id": "442806003863785",
+    "video_url": "https://video-product.cdn.minimax.io/inference_output/rollout/2026-09-17/d5538db1-37fa-4d9d-a0eb-0313ead244aa/output_aigc.mp4",
+    "output_file": "/Users/linglingqi/Downloads/她的花向上开-24镜完整版/output/镜头11.mp4",
+    "completed_at": "2026-09-18 00:00:22"
+  },
+  "shot_12": {
+    "status": "succeeded",
+    "task_id": "442810359095494",
+    "video_url": "https://video-product.cdn.minimax.io/inference_output/rollout/2026-09-17/8e905e95-ccbc-4cc8-aab5-1fdd96884c0c/output_aigc.mp4",
+    "output_file": "/Users/linglingqi/Downloads/她的花向上开-24镜完整版/output/镜头12.mp4",
+    "completed_at": "2026-09-18 00:05:45"
+  },
+  "shot_21": {
+    "status": "succeeded",
+    "task_id": "442811856814189",
+    "video_url": "https://video-product.cdn.minimax.io/inference_output/rollout/2026-09-17/3ac79200-dbb6-482a-8a7b-0b3d4cb4093f/output_aigc.mp4",
+    "output_file": "/Users/linglingqi/Downloads/她的花向上开-24镜完整版/output/镜头21.mp4",
+    "completed_at": "2026-09-18 00:15:01"
+  },
+  "shot_22": {
+    "status": "succeeded",
+    "task_id": "442814006636785",
+    "video_url": "https://video-product.cdn.minimax.io/inference_output/rollout/2026-09-17/bb7f039b-e49b-461a-9b19-46e6cdd8b04b/output_aigc.mp4",
+    "output_file": "/Users/linglingqi/Downloads/她的花向上开-24镜完整版/output/镜头22.mp4",
+    "completed_at": "2026-09-18 00:20:42"
+  },
+  "shot_23": {
+    "status": "succeeded",
+    "task_id": "442814715822319",
+    "video_url": "https://video-product.cdn.minimax.io/inference_output/rollout/2026-09-17/ae1bc198-e1c9-402a-97a7-6ace174d15c2/output_aigc.mp4",
+    "output_file": "/Users/linglingqi/Downloads/她的花向上开-24镜完整版/output/镜头23.mp4",
+    "completed_at": "2026-09-18 00:26:04"
+  },
+  "shot_24": {
+    "status": "succeeded",
+    "task_id": "442816398745812",
+    "video_url": "https://video-product.cdn.minimax.io/inference_output/rollout/2026-09-17/dd4cf038-ef8d-4a18-9581-2d7be299d443/output_aigc.mp4",
+    "output_file": "/Users/linglingqi/Downloads/她的花向上开-24镜完整版/output/镜头24.mp4",
+    "completed_at": "2026-09-18 00:31:03"
+  }
+}
